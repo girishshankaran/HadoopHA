@@ -1,0 +1,11 @@
+---
+  - name: Add additional data directory properties for data nodes   
+    blockinfile:
+      path: "{{ hadoop_path }}/etc/hadoop/hdfs-site.xml"
+      block: |
+        <property>
+        <name> dfs.datanode.data.dir</name>
+        <value>{{ dn_data_dir }}</value>
+        </property>
+      insertbefore: "</configuration>"
+

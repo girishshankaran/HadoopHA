@@ -1,0 +1,35 @@
+---
+# tasks file for nntasks
+
+  - name: Create Masters
+    template:
+      src: "masters.j2"
+      dest: "{{ hadoop_config_path }}/masters"
+      mode: 644
+    ignore_errors: yes
+
+  - name: Check if 'zkformat_op' file exists
+    stat:
+      path: "{{ misc_data_dir }}/zkformat_op"
+    register: fileexists
+ 
+  - name: Format the ZKFC in Active namenode
+    shell: hdfs zkfc -formatZK
+    when: not fileexists.stat.exists
+    register: output_zkfc
+    ignore_errors: yes
+
+  - name: Create a file
+    file:
+      path: "{{ misc_data_dir }}/zkformat_op"
+      state: touch
+
+  - name: Copy the content of ZKFC formatting output
+    local_action: copy content={{ output_zkfc }} dest="{{ misc_data_dir }}/zkformat_op"
+    ignore_errors: yes
+
+  - name: Start ZKFC
+    shell: nohup hadoop-daemon.sh start zkfc
+#   when: output.stdout.find("DFSZKFailoverController") == -1
+    ignore_errors: yes
+

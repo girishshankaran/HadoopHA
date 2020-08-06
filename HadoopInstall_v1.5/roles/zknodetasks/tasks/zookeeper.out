@@ -1,0 +1,257 @@
+2020-05-20 23:47:43,097 [myid:] - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /root/zookeeper-3.4.6/bin/../conf/zoo.cfg
+2020-05-20 23:47:43,100 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2020-05-20 23:47:43,100 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2020-05-20 23:47:43,100 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2020-05-20 23:47:43,101 [myid:] - WARN  [main:QuorumPeerMain@113] - Either no config or no quorum defined in config, running  in standalone mode
+2020-05-20 23:47:43,110 [myid:] - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /root/zookeeper-3.4.6/bin/../conf/zoo.cfg
+2020-05-20 23:47:43,110 [myid:] - INFO  [main:ZooKeeperServerMain@95] - Starting server
+2020-05-20 23:47:43,115 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2020-05-20 23:47:43,115 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=verde-vm1.in.ibm.com
+2020-05-20 23:47:43,115 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.8.0_181
+2020-05-20 23:47:43,115 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2020-05-20 23:47:43,115 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.181-7.b13.el7.x86_64/jre
+2020-05-20 23:47:43,115 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/root/zookeeper-3.4.6/bin/../build/classes:/root/zookeeper-3.4.6/bin/../build/lib/*.jar:/root/zookeeper-3.4.6/bin/../lib/slf4j-log4j12-1.6.1.jar:/root/zookeeper-3.4.6/bin/../lib/slf4j-api-1.6.1.jar:/root/zookeeper-3.4.6/bin/../lib/netty-3.7.0.Final.jar:/root/zookeeper-3.4.6/bin/../lib/log4j-1.2.16.jar:/root/zookeeper-3.4.6/bin/../lib/jline-0.9.94.jar:/root/zookeeper-3.4.6/bin/../zookeeper-3.4.6.jar:/root/zookeeper-3.4.6/bin/../src/java/lib/*.jar:/root/zookeeper-3.4.6/bin/../conf:
+2020-05-20 23:47:43,115 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+2020-05-20 23:47:43,115 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/tmp
+2020-05-20 23:47:43,115 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2020-05-20 23:47:43,116 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Linux
+2020-05-20 23:47:43,116 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=amd64
+2020-05-20 23:47:43,116 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=3.10.0-957.el7.x86_64
+2020-05-20 23:47:43,116 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=root
+2020-05-20 23:47:43,116 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/root
+2020-05-20 23:47:43,116 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/root/HadoopInstall/roles/zknodetasks/tasks
+2020-05-20 23:47:43,121 [myid:] - INFO  [main:ZooKeeperServer@755] - tickTime set to 2000
+2020-05-20 23:47:43,121 [myid:] - INFO  [main:ZooKeeperServer@764] - minSessionTimeout set to -1
+2020-05-20 23:47:43,121 [myid:] - INFO  [main:ZooKeeperServer@773] - maxSessionTimeout set to -1
+2020-05-20 23:47:43,128 [myid:] - INFO  [main:NIOServerCnxnFactory@94] - binding to port 0.0.0.0/0.0.0.0:2181
+2020-05-20 23:47:44,410 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48076
+2020-05-20 23:47:44,423 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48076 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:47:44,423 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48076 (no session established for client)
+2020-05-20 23:47:47,455 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48082
+2020-05-20 23:47:47,456 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48082 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:47:47,457 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48082 (no session established for client)
+2020-05-20 23:47:50,263 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48088
+2020-05-20 23:47:50,264 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48088 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:47:50,264 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48088 (no session established for client)
+2020-05-20 23:47:52,858 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48094
+2020-05-20 23:47:52,859 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48094 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:47:52,860 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48094 (no session established for client)
+2020-05-20 23:47:55,533 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48100
+2020-05-20 23:47:55,534 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48100 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:47:55,534 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48100 (no session established for client)
+2020-05-20 23:47:58,517 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48108
+2020-05-20 23:47:58,518 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48108 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:47:58,518 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48108 (no session established for client)
+2020-05-20 23:48:01,770 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48114
+2020-05-20 23:48:01,771 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48114 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:01,771 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48114 (no session established for client)
+2020-05-20 23:48:03,818 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48120
+2020-05-20 23:48:03,819 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48120 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:03,819 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48120 (no session established for client)
+2020-05-20 23:48:07,234 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48126
+2020-05-20 23:48:07,235 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48126 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:07,235 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48126 (no session established for client)
+2020-05-20 23:48:09,567 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48132
+2020-05-20 23:48:09,568 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48132 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:09,568 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48132 (no session established for client)
+2020-05-20 23:48:13,459 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48138
+2020-05-20 23:48:13,460 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48138 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:13,460 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48138 (no session established for client)
+2020-05-20 23:48:16,288 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48144
+2020-05-20 23:48:16,289 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48144 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:16,289 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48144 (no session established for client)
+2020-05-20 23:48:20,055 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48150
+2020-05-20 23:48:20,055 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48150 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:20,056 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48150 (no session established for client)
+2020-05-20 23:48:22,179 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48162
+2020-05-20 23:48:22,179 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48162 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:22,180 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48162 (no session established for client)
+2020-05-20 23:48:25,753 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48168
+2020-05-20 23:48:25,754 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48168 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:25,754 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48168 (no session established for client)
+2020-05-20 23:48:28,723 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48174
+2020-05-20 23:48:28,724 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48174 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:28,724 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48174 (no session established for client)
+2020-05-20 23:48:31,468 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48180
+2020-05-20 23:48:31,469 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48180 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:31,470 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48180 (no session established for client)
+2020-05-20 23:48:33,650 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48186
+2020-05-20 23:48:33,650 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48186 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:33,651 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48186 (no session established for client)
+2020-05-20 23:48:36,706 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48192
+2020-05-20 23:48:36,707 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48192 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:36,707 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48192 (no session established for client)
+2020-05-20 23:48:39,181 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48198
+2020-05-20 23:48:39,182 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48198 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:39,183 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48198 (no session established for client)
+2020-05-20 23:48:42,921 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48204
+2020-05-20 23:48:42,922 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48204 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:42,922 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48204 (no session established for client)
+2020-05-20 23:48:45,977 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48210
+2020-05-20 23:48:45,977 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48210 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:45,978 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48210 (no session established for client)
+2020-05-20 23:48:48,619 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48216
+2020-05-20 23:48:48,620 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48216 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:48,620 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48216 (no session established for client)
+2020-05-20 23:48:51,815 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48222
+2020-05-20 23:48:51,815 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48222 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:51,816 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48222 (no session established for client)
+2020-05-20 23:48:53,530 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48228
+2020-05-20 23:48:53,530 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48228 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:53,531 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48228 (no session established for client)
+2020-05-20 23:48:56,515 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48234
+2020-05-20 23:48:56,516 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48234 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:56,516 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48234 (no session established for client)
+2020-05-20 23:48:59,627 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48246
+2020-05-20 23:48:59,628 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48246 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:48:59,628 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48246 (no session established for client)
+2020-05-20 23:49:01,899 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48252
+2020-05-20 23:49:01,900 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48252 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:01,900 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48252 (no session established for client)
+2020-05-20 23:49:04,942 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48258
+2020-05-20 23:49:04,943 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48258 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:04,943 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48258 (no session established for client)
+2020-05-20 23:49:08,668 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48264
+2020-05-20 23:49:08,669 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48264 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:08,669 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48264 (no session established for client)
+2020-05-20 23:49:10,741 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48270
+2020-05-20 23:49:10,742 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48270 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:10,742 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48270 (no session established for client)
+2020-05-20 23:49:14,344 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48278
+2020-05-20 23:49:14,345 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48278 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:14,345 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48278 (no session established for client)
+2020-05-20 23:49:16,826 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48284
+2020-05-20 23:49:16,827 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48284 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:16,827 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48284 (no session established for client)
+2020-05-20 23:49:20,162 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48290
+2020-05-20 23:49:20,163 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48290 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:20,163 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48290 (no session established for client)
+2020-05-20 23:49:23,243 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48296
+2020-05-20 23:49:23,244 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48296 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:23,244 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48296 (no session established for client)
+2020-05-20 23:49:25,786 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48302
+2020-05-20 23:49:25,787 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48302 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:25,787 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48302 (no session established for client)
+2020-05-20 23:49:29,259 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48308
+2020-05-20 23:49:29,260 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48308 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:29,261 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48308 (no session established for client)
+2020-05-20 23:49:31,608 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48314
+2020-05-20 23:49:31,609 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48314 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:31,609 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48314 (no session established for client)
+2020-05-20 23:49:35,443 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48320
+2020-05-20 23:49:35,443 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48320 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:35,444 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48320 (no session established for client)
+2020-05-20 23:49:38,069 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48326
+2020-05-20 23:49:38,070 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48326 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:38,070 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48326 (no session established for client)
+2020-05-20 23:49:41,703 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48332
+2020-05-20 23:49:41,703 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48332 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:41,704 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48332 (no session established for client)
+2020-05-20 23:49:44,313 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48338
+2020-05-20 23:49:44,314 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48338 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:44,314 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48338 (no session established for client)
+2020-05-20 23:49:46,366 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48344
+2020-05-20 23:49:46,367 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48344 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:46,368 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48344 (no session established for client)
+2020-05-20 23:49:49,927 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48350
+2020-05-20 23:49:49,928 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48350 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:49,928 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48350 (no session established for client)
+2020-05-20 23:49:52,509 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48356
+2020-05-20 23:49:52,510 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48356 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:52,510 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48356 (no session established for client)
+2020-05-20 23:49:55,064 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48362
+2020-05-20 23:49:55,064 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48362 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:55,065 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48362 (no session established for client)
+2020-05-20 23:49:57,498 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48368
+2020-05-20 23:49:57,498 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48368 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:49:57,499 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48368 (no session established for client)
+2020-05-20 23:50:00,346 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48374
+2020-05-20 23:50:00,347 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48374 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:00,347 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48374 (no session established for client)
+2020-05-20 23:50:02,798 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48380
+2020-05-20 23:50:02,799 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48380 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:02,799 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48380 (no session established for client)
+2020-05-20 23:50:05,258 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48386
+2020-05-20 23:50:05,259 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48386 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:05,259 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48386 (no session established for client)
+2020-05-20 23:50:08,703 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48392
+2020-05-20 23:50:08,704 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48392 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:08,704 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48392 (no session established for client)
+2020-05-20 23:50:11,544 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48398
+2020-05-20 23:50:11,545 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48398 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:11,545 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48398 (no session established for client)
+2020-05-20 23:50:15,165 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48404
+2020-05-20 23:50:15,166 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48404 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:15,166 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48404 (no session established for client)
+2020-05-20 23:50:17,820 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48410
+2020-05-20 23:50:17,821 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48410 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:17,821 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48410 (no session established for client)
+2020-05-20 23:50:20,460 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48416
+2020-05-20 23:50:20,460 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48416 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:20,461 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48416 (no session established for client)
+2020-05-20 23:50:22,665 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48422
+2020-05-20 23:50:22,666 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48422 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:22,666 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48422 (no session established for client)
+2020-05-20 23:50:25,249 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48428
+2020-05-20 23:50:25,250 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48428 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:25,250 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48428 (no session established for client)
+2020-05-20 23:50:28,226 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48434
+2020-05-20 23:50:28,226 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48434 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:28,227 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48434 (no session established for client)
+2020-05-20 23:50:31,410 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48440
+2020-05-20 23:50:31,411 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48440 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:31,411 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48440 (no session established for client)
+2020-05-20 23:50:34,437 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48446
+2020-05-20 23:50:34,438 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48446 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:34,438 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48446 (no session established for client)
+2020-05-20 23:50:37,423 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48452
+2020-05-20 23:50:37,424 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48452 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:37,424 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48452 (no session established for client)
+2020-05-20 23:50:39,444 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48458
+2020-05-20 23:50:39,445 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48458 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:39,445 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48458 (no session established for client)
+2020-05-20 23:50:42,674 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48464
+2020-05-20 23:50:42,675 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48464 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:42,676 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48464 (no session established for client)
+2020-05-20 23:50:45,464 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48470
+2020-05-20 23:50:45,465 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48470 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:45,465 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48470 (no session established for client)
+2020-05-20 23:50:48,181 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48484
+2020-05-20 23:50:48,182 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48484 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:48,182 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48484 (no session established for client)
+2020-05-20 23:50:52,007 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48490
+2020-05-20 23:50:52,007 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48490 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:52,007 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48490 (no session established for client)
+2020-05-20 23:50:54,751 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48496
+2020-05-20 23:50:54,751 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48496 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:54,751 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48496 (no session established for client)
+2020-05-20 23:50:57,933 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48502
+2020-05-20 23:50:57,934 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48502 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:50:57,934 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48502 (no session established for client)
+2020-05-20 23:51:00,128 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48514
+2020-05-20 23:51:00,128 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48514 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:51:00,129 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48514 (no session established for client)
+2020-05-20 23:51:03,036 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48526
+2020-05-20 23:51:03,036 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48526 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:51:03,036 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48526 (no session established for client)
+2020-05-20 23:51:06,274 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48532
+2020-05-20 23:51:06,275 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48532 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:51:06,275 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48532 (no session established for client)
+2020-05-20 23:51:07,918 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48538
+2020-05-20 23:51:07,919 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48538 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:51:07,919 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48538 (no session established for client)
+2020-05-20 23:51:10,843 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48544
+2020-05-20 23:51:10,843 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48544 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:51:10,843 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48544 (no session established for client)
+2020-05-20 23:51:14,180 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48552
+2020-05-20 23:51:14,181 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48552 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:51:14,181 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48552 (no session established for client)
+2020-05-20 23:51:16,186 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48558
+2020-05-20 23:51:16,186 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48558 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:51:16,187 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48558 (no session established for client)
+2020-05-20 23:51:19,159 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48564
+2020-05-20 23:51:19,160 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48564 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:51:19,160 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48564 (no session established for client)
+2020-05-20 23:51:21,230 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /192.168.100.191:48570
+2020-05-20 23:51:21,231 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@841] - Refusing session request for client /192.168.100.191:48570 as it has seen zxid 0x9 our last zxid is 0x0 client must try another server
+2020-05-20 23:51:21,231 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /192.168.100.191:48570 (no session established for client)

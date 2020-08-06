@@ -1,0 +1,8 @@
+
+{% for host in groups['cluster01'] %}
+{% if host == inventory_hostname %}
+{{ loop.index }}
+{% endif %}
+{% endfor %}
+
+

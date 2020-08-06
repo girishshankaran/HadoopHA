@@ -1,0 +1,31 @@
+---
+# tasks file for standbynntasks
+  - name: Check if HDFS metadata is already copied over to the standby namenode
+    stat:
+       path: "{{ misc_data_dir }}/metadata_op"
+    register: op1
+
+  - name: Copy the content of HDFS metadata output to a file
+    local_action: copy content={{ op1 }} dest="{{ misc_data_dir }}/test_op"
+    ignore_errors: yes
+
+  - name: Copy HDFS metadata from active namenode to standby namenode
+    shell: hdfs namenode -bootstrapStandby
+    when: not op1.stat.exists
+    register: op2
+    ignore_errors: yes
+
+  - name: Create a file
+    file:
+      path: "{{ misc_data_dir }}/metadata_op"
+      state: touch
+
+  - name: Copy the content of HDFS metadata output to a file
+    local_action: copy content={{ op2 }} dest="{{ misc_data_dir }}/metadata_op"
+    ignore_errors: yes
+
+  - name: Start the namenode daemon in Standby namenode
+    shell: nohup hdfs --daemon start namenode
+    ignore_errors: yes
+#   when: output2.stdout.find("NameNode") == -1
+

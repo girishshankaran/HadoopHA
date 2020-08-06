@@ -1,0 +1,17 @@
+---
+  - name: Copy the Zookeeper file
+    copy: 
+      src: "{{ zk_path }}/conf/zoo_sample.cfg"
+      dest: "{{ zk_path }}/conf/zoo.cfg"
+
+  - name: Configure the ZK config file
+    blockinfile:      
+      path: "{{ zk_path }}/conf/zoo.cfg"
+      block: |
+        dataDir: {{ zk_data_dir }}
+      
+        Server.1={{ node1 }}:2888:3888
+        Server.2={{ node2 }}:2888:3888
+        Server.3={{ node3 }}:2888:3888
+        Server.4={{ node4 }}:2888:3888
+      

@@ -1,0 +1,16 @@
+---
+# tasks file for configs
+- name: set core-site.xml
+  template:
+    src: "core-site.xml.j2"
+    dest: "{{ hadoop_path }}/etc/hadoop/core-site.xml"
+
+- name: set hdfs-site.xml
+  template:
+    src: "hdfs-site.xml.j2"
+    dest: "{{ hadoop_path }}/etc/hadoop/hdfs-site.xml"
+
+# - import_tasks: zk_config.yml
+# - import_tasks: create_ZK_myid.yml
+# - import_tasks: set_additional_prop_dn.yml
+

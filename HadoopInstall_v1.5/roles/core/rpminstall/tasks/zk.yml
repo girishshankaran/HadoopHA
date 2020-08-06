@@ -1,0 +1,18 @@
+---
+  - name: Check if Zooper is already downloaded and extracted
+    stat:
+        path: '{{ zk_path }}'
+    register: dir
+
+  - name: Install Zookeeper
+    get_url:
+        url: "https://archive.apache.org/dist/zookeeper/zookeeper-{{zkversion}}/zookeeper-{{zkversion}}.tar.gz"
+        dest: "/root/"
+    when: not dir.stat.exists
+
+  - name: Unzip Zookeeper
+    unarchive:
+        src: "/root/zookeeper-{{zkversion}}.tar.gz"
+        dest: "/root/"
+    when: not dir.stat.exists
+

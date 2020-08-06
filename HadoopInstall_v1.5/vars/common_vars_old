@@ -1,0 +1,66 @@
+# hadoop basic vars
+# download_path: "/home/pippo/Downloads"
+hadoop_version: "2.6.0"
+hadoop_path: "/root/hadoop-{{ hadoop_version }}"
+hadoop_config_path: "/root/hadoop-{{ hadoop_version }}/etc/hadoop"
+zkversion: "3.4.6"
+zk_path: "/root/zookeeper-{{ zkversion }}"
+
+# Data directory paths
+nn_data_dir: "/root/HA/data/namenode"
+dn_data_dir: "/root/HA/data/datanode"
+zk_data_dir: "/root/HA/data/zk"
+jn_data_dir: "/root/HA/data/jn"
+
+# hadoop_tmp: "/home/hadoop/tmp"
+# hadoop_dfs_name: "/home/hadoop/dfs/name"
+# hadoop_dfs_data: "/home/hadoop/dfs/data"
+# hadoop_log_path: "/home/hadoop/hadoop_logs"
+
+#hadoop_create_path:
+#  - "{{ hadoop_tmp }}"
+#  - "{{ hadoop_dfs_name }}"
+#  - "{{ hadoop_dfs_data }}"
+#  - "{{ hadoop_log_path }}"
+
+
+# hadoop configration
+ hdfs_port: 9000
+ core_site_properties:
+  - {
+      "name":"fs.defaultFS",
+      "value":"hdfs://{{ master_ip }}:{{ hdfs_port }}"
+  }
+  - {
+      "name":"hadoop.tmp.dir",
+      "value":"file:{{ hadoop_tmp }}"
+  }
+  - {
+    "name":"io.file.buffer.size",
+    "value":"131072"
+  }
+
+dfs_namenode_httpport: 9001
+hdfs_site_properties:
+  - {
+      "name":"dfs.namenode.secondary.http-address",
+      "value":"{{ master_hostname }}:{{ dfs_namenode_httpport }}"
+  }
+  - {
+      "name":"dfs.namenode.name.dir",
+      "value":"file:{{ hadoop_dfs_name }}"
+  }
+  - {
+      "name":"dfs.namenode.data.dir",
+      "value":"file:{{ hadoop_dfs_data }}"
+  }
+  - {
+      "name":"dfs.replication",
+      "value":"{{ groups['workers']|length }}"
+  }
+  - {
+    "name":"dfs.webhdfs.enabled",
+    "value":"true"
+  }
+
+

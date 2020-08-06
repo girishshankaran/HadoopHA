@@ -1,0 +1,33 @@
+---
+  - hosts: cluster01
+    roles:
+       - core/rpminstall
+       - core/configs
+       - prereqs/install
+       - prereqs/dncommon
+        
+  - hosts: jnodes
+    roles: 
+       - jnodetasks
+
+  - hosts: node1
+    roles:
+       - activenntasks    
+
+  - hosts: node2
+    roles:
+       - standbynntasks 
+
+  - hosts: zknodes
+    roles:
+       - zknodetasks
+
+  - hosts: datanodes
+    roles:
+       - datanodetasks/datanodestart
+
+  - hosts: namenodes
+    roles:
+       - nntasks
+
+

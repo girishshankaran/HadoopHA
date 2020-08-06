@@ -1,0 +1,4 @@
+---
+  - name: Set JAVA_HOME in hadoop-env.sh
+    lineinfile: dest="{{ hadoop_path }}/etc/hadoop/hadoop-env.sh" regexp=JAVA_HOME= line="export JAVA_HOME={{ jdk_path }}"
+    when: "ansible_os_family == 'RedHat'"

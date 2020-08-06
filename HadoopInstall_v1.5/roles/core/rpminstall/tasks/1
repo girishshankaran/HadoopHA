@@ -1,0 +1,11 @@
+---
+  - name: Download Hadoop
+    get_url:
+        url: "https://archive.apache.org/dist/hadoop/core/hadoop-{{hadoop_version}}/hadoop-{{hadoop_version}}.tar.gz"
+        dest: "/root"
+
+ # - name: Extract the files
+ #   unarchive:
+ #       src: "/root/hadoop-{{hadoop_version}}.tar.gz"
+ #       dest: "/root/"
+

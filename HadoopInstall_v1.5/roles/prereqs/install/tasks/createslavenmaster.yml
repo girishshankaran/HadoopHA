@@ -1,0 +1,10 @@
+---
+  - name: Create master and slave files
+    template:
+        src: master.j2
+        dest: "{{ hadoop-path }}/masters"
+  - name: Create slave files
+    template:
+        src: slave.j2
+        dest: "{{ hadoop-path }}/slaves"
+    

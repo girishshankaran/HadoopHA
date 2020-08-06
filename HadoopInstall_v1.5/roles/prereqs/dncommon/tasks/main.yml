@@ -1,0 +1,6 @@
+---
+# tasks file for datanodetasks
+  - name: Creating the slave file with datanode IPs
+    import_tasks: create_slaves.yml
+  - name: Setting property for data nodes
+    import_tasks: set_additional_prop_dn.yml

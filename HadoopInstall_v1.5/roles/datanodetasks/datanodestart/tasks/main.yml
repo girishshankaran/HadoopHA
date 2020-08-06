@@ -1,0 +1,11 @@
+---
+# tasks file for datanodestart
+  - name: Check if datanode daemons are already running
+    shell: jps | grep DataNode
+    register: output
+    ignore_errors: true
+
+  - name: Start the data nodes daemons
+    shell: nohup hadoop-daemon.sh start datanode
+    ignore_errors: yes
+#   when: output.stdout.find("DataNode") == -1

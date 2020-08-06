@@ -1,0 +1,19 @@
+---
+# tasks file for activenntasks.yml
+  - name: Format the acive namenode
+    shell: hdfs namenode -format
+    register: nnformat
+    ignore_errors: yes
+
+  - name: Copy the nn format out to a file
+    local_action: copy content={{ nnformat }} dest="{{ hadoop_config_path }}/nnformat_op }}"
+    ignore_errors: yes
+
+  - name: Check if active namenode is already running
+    shell: jps | grep NameNode
+    register: output
+     
+  - name: Start the active namenode
+    shell: hadoop-daemon.sh start namenode
+    when: output.stdout.find("NameNode") == -1
+   

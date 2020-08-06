@@ -1,0 +1,4 @@
+---
+ - name: Check the number of hosts (min should be 3 nodes for an HA cluster)
+ - meta: end_play
+   when: "{{ ansible_play_hosts }} | length < 3"

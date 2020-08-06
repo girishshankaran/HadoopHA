@@ -1,0 +1,19 @@
+---
+# tasks file for jnodetasks
+#  - name: Check if Journal node daemons are already running
+#    command: systemctl status systemd-journald
+#    register: output
+
+  - name: Start Journal nodes on all 3 nodes
+#   command: "{{ hadoop_path }}/sbin/hadoop-daemon.sh start journalnode -nonInteractive"
+#   shell: "mohup {{ hadoop_path }}/bin/hdfs --daemon start journalnode"
+    shell: nohup {{ hadoop_path }}/bin/hdfs --daemon start journalnode
+    ignore_errors: yes
+#   command: "{{ hadoop_path }}/bin/hdfs --daemon start journalnode -force"
+#   command: /root/zookeeper-3.4.6/bin/zkServer.sh start
+#    become: true
+#    become_user: "root"
+#    ignore_errors: yes
+    
+#   when: output.stdout.find("active") == -1
+

@@ -1,0 +1,17 @@
+---
+  - name: Check if Hadoop is already downloaded and extracted
+    stat:
+        path: '{{ hadoop_path }}'
+    register: dir
+
+  - name: Download Hadoop
+    get_url:
+        url: "https://archive.apache.org/dist/hadoop/core/hadoop-{{hadoop_version}}/hadoop-{{hadoop_version}}.tar.gz"
+        dest: "/root/"
+    when: not dir.stat.exists
+
+  - name: Extract the files
+    unarchive:
+        src: "/root/hadoop-{{hadoop_version}}.tar.gz"
+        dest: "/root/"
+    when: not dir.stat.exists

@@ -1,0 +1,6 @@
+{% for host in groups['cluster01'] %}
+{% if loop.index == 4 or loop.index ==3 %}
+{{ host }}
+{% endif %}
+{% endfor %}
+

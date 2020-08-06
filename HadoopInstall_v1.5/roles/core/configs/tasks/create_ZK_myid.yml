@@ -1,0 +1,15 @@
+---
+  - name: Verify if the myid file exists
+    stat:    
+      path: "{{ zk_data_dir }}/myid"
+    register: dir
+
+  - name: Create myid files
+    template:
+      src: myid.j2
+      dest: "{{ zk_data_dir }}/myid"
+    when: not dir.stat.exists
+
+        
+         
+         

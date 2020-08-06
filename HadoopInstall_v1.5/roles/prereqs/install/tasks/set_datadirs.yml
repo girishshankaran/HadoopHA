@@ -1,0 +1,70 @@
+---
+  - name: Check if namenode data dir exists
+    stat:
+      path: "{{ nn_data_dir }}"
+    register: nndir
+
+  - name: Set data directory for namenode
+    file:
+       path: "{{ nn_data_dir }}"
+       state: directory
+       owner: root
+       group: root
+       mode: 0755
+    when: not nndir.stat.exists
+
+  - name: Check if datanode data dir exists
+    stat:
+      path: "{{ dn_data_dir }}"
+    register: dndir
+
+  - name: Set data directory for datanode
+    file: 
+       path: "{{ dn_data_dir }}"
+       state: directory
+       owner: root
+       group: root
+       mode: 0755
+    when: not dndir.stat.exists
+
+  - name: Check if journal node data dir exists
+    stat:
+      path: "{{ jn_data_dir }}"
+    register: jndir
+
+  - name: Set data directory for journal nodes
+    file:
+       path: "{{ jn_data_dir }}"
+       state: directory
+       owner: root
+       group: root
+       mode: 0755
+    when: not jndir.stat.exists
+
+  - name: Check if Zookeeper data dir exists
+    stat:
+      path: "{{ zk_data_dir }}"
+    register: zkdir
+
+  - name: Set data directory for Zookeeper
+    file:
+       path: "{{ zk_data_dir }}"
+       state: directory
+       owner: root
+       group: root
+       mode: 0755
+    when: not zkdir.stat.exists
+
+  - name: Check if miscellaneous dir exists
+    stat:
+      path: "{{ misc_data_dir }}"
+    register: mdir
+
+  - name: Set miscellaneous dir
+    file:
+       path: "{{ misc_data_dir }}"
+       state: directory
+       owner: root
+       group: root
+       mode: 0755
+    when: not mdir.stat.exists

@@ -1,0 +1,29 @@
+---
+# tasks file for activenntasks.yml
+
+   - name: Check if 'nnformat_op' file exists
+     stat:
+       path: "{{ misc_data_dir }}/nnformat_op"
+     register: fileexists
+
+   - name: Format the acive namenode
+     shell: hdfs namenode -format
+     when: not fileexists.stat.exists
+     register: nnformat
+#    when: checkformat.stdout.find("has been successfully formatted") == -1
+#    register: nnformat
+     ignore_errors: yes
+ 
+   - name: Create a file
+     file:
+       path: "{{ misc_data_dir }}/nnformat_op"
+       state: touch
+
+   - name: Copy the nn format out to a file
+     local_action: copy content={{ nnformat }} dest="{{ misc_data_dir }}/nnformat_op"
+     ignore_errors: yes
+
+   - name: Start the active namenode
+     shell: nohup {{ hadoop_path }}/bin/hdfs --daemon start namenode
+     ignore_errors: yes
+

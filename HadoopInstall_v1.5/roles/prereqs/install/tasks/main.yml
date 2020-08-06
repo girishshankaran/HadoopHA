@@ -1,0 +1,17 @@
+---
+# tasks file for prereqs/install
+# - import_tasks: validate_host_number.yml
+  - import_tasks: java_ins.yml
+  - import_tasks: wget_ins.yml
+  - import_tasks: set_datadirs.yml
+  - import_tasks: set_env_vars.yml
+  - import_tasks: set_env_hadoop.yml
+  - import_tasks: zk_config.yml
+  - import_tasks: create_ZK_myid.yml
+  - import_tasks: set_additional_prop_dn.yml
+# - import_tasks: zk_config.yml
+# - name: Run the source .bashrc command
+#   shell: source .bashrc
+
+
+

@@ -1,0 +1,20 @@
+hadoop_version: "3.1.1"
+hadoop_path: "/root/hadoop-{{ hadoop_version }}"
+hadoop_config_path: "/root/hadoop-{{ hadoop_version }}/etc/hadoop"
+zkversion: "3.4.6"
+zk_path: "/root/zookeeper-{{ zkversion }}"
+jdk_path: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64
+
+
+# Data directory paths
+nn_data_dir: "/root/HA/data/namenode"
+dn_data_dir: "/root/HA/data/datanode"
+zk_data_dir: "/root/HA/data/zk"
+jn_data_dir: "/root/HA/data/jn"
+misc_data_dir: "/root/HA/data/mdir"
+
+n1: "10.11.3.175"
+n2: "10.11.13.19"
+n3: "10.11.13.219"
+n4: "10.11.14.12"
+

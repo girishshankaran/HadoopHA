@@ -1,0 +1,11 @@
+---
+# tasks file for zknodetasks
+  - name: Check if ZK service is already running
+    shell: jps | grep QuorumPeerMain
+    register: output
+    ignore_errors: yes
+
+  - name: Start Zookeeper service on all nodes
+    shell: nohup {{ zk_path }}/bin/zkServer.sh start
+    ignore_errors: yes
+ #  when: output.stdout.find("QuorumPeerMain") == -1
