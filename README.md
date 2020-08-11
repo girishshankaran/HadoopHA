@@ -1,10 +1,10 @@
 This is an Ansible repo for automating Apach Hadoop cluster creation with HA.
 
 <h1> Pre-requisities for using this repo </h1>
- - Install and set up Ansible on one of your nodes
- - Clone the repo on to your local machine
- - Navigate to the repo and edit the hosts file to include your namenodes and data nodes
- - Go to the group_vars folder and edit the all.yml file to change any default values such as Hadoop version, Zookeeper version, etc.
+  *Install and set up Ansible on one of your nodes
+  *Clone the repo on to your local machine
+  *Navigate to the repo and edit the hosts file to include your namenodes and data nodes
+  *Go to the group_vars folder and edit the all.yml file to change any default values such as Hadoop version, Zookeeper version, etc.
 
 Installing Ansible:
  1. curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
