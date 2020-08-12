@@ -16,4 +16,4 @@
 - Number of data nodes should be 2
 - Number of namenodes should be 2
 
-Note: I'm working on removing these limitations in the upcoming versions.
+**Note**: I'm working on removing these limitations in the upcoming versions.
