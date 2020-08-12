@@ -1,6 +1,6 @@
-This is an Ansible repo for automating Apach Hadoop cluster creation with HA.
+#Ansible repo for automating Apach Hadoop cluster creation with HA#
 
-<h1> Pre-requisities for using this repo </h1>
+## Pre-requisities for using this repo ##
   - Install and set up Ansible on one of your nodes
   - Clone the repo on to your local machine
   - Navigate to the repo and edit the hosts file to include your namenodes and data nodes
