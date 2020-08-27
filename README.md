@@ -11,6 +11,8 @@
  2. python get-pip.py
  3. pip install ansible
 
+**Note**:
+- Ensure that all dependent packages are installed.
 ## Limitations ##
 - It can accept only up to a maximum of 4 nodes
 - Number of data nodes should be 2
