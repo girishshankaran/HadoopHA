@@ -1,0 +1,4 @@
+# Introduction to Cloud Native Spectrum Scale #
+  IBM Spectrum Scale can be containerized to be deployed on Red Hat OCP and other container orchestration tools such as Vanilla Kubernetes. By   doing so. we're following the path of modernization of storage where volumes can be created on the fly.
+
+  We can leverage potential features of Scale by doing the containerization.
