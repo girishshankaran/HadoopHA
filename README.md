@@ -13,6 +13,7 @@
 
 **Note**:
 - Ensure that all dependent packages are installed.
+- Ensure that Python package is installed and is the latest version.
 ## Limitations ##
 - It can accept only up to a maximum of 4 nodes
 - Number of data nodes should be 2
