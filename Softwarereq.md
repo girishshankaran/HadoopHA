@@ -5,3 +5,4 @@
 ### Software ###
  - IBM Spectrum Scale version 5.0.4.1 or later
  - Red Hat Core OS
+ - Python version 1.6 or later
