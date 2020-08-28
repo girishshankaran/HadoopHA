@@ -5,3 +5,6 @@
 ### Software ###
  - IBM Spectrum Scale version 5.0.4.1 or later
  - Red Hat Core OS
+### Operating Systems ###
+ - RHEL 7.7 and 7.8
+ 
