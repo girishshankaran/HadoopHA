@@ -10,8 +10,8 @@
       block: |
         dataDir: {{ zk_data_dir }}
       
-        Server.1={{ node1 }}:2888:3888
-        Server.2={{ node2 }}:2888:3888
-        Server.3={{ node3 }}:2888:3888
-        Server.4={{ node4 }}:2888:3888
+        {% for host in zknodes %}
+         server.{{ hostvars[host].zookeeper_id | default(zookeeper_id) }}={{ hostvars[host]['ansible_nodename'] }}:{{ 2888 }}:{{ 3888 }}
+        {% endfor %}
+
       
