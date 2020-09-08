@@ -23,4 +23,4 @@
 - I'm working on removing these limitations in the upcoming versions.
 
 ### Implications ###
-- None
+- None as of now.
