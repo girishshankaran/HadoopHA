@@ -9,9 +9,9 @@
       path: "{{ zk_path }}/conf/zoo.cfg"
       block: |
         dataDir: {{ zk_data_dir }}
-      
-        Server.1={{ n1 }}:2888:3888
-        Server.2={{ n2 }}:2888:3888
-        Server.3={{ n3 }}:2888:3888
-        Server.4={{ n4 }}:2888:3888
+        
+        {% for host in groups['cluster01'] %}
+        Server.{{ loop.index }}={{ host }}:2888:3888
+        {% endfor %}
+
       
