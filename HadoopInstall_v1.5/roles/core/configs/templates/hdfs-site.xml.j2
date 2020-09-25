@@ -38,7 +38,7 @@
  </property>
  <property>
  <name>dfs.namenode.shared.edits.dir</name>
- <value>qjournal://{{ n1 }}:8485;{{ n2 }}:8485;{{ n3 }}:8485/mycluster</value>
+ <value>qjournal://{% for host in groups['jnodes'] %}{{ host }}:8485;{% endfor %}/mycluster</value>
  </property>
  <property>
  <name>dfs.client.failover.proxy.provider.ha-cluster</name>
