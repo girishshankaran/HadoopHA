@@ -22,19 +22,19 @@
  </property>
  <property>
  <name>dfs.namenode.rpc-address.mycluster.nn1</name>
- <value>{% for host in groups['jnodes'] %}{% if loop.index == 1 %}{{ host }}:8020{% endif %}{% endfor %}</value>
+ <value>{{ n1 }}:8020</value>
  </property>
  <property>
  <name>dfs.namenode.rpc-address.mycluster.nn2</name>
- <value>{% for host in groups['jnodes'] %}{% if loop.index == 2 %}{{ host }}:8020{% endif %}{% endfor %}</value>
+ <value>{{ n2 }}:8020</value>
  </property>
  <property>
  <name>dfs.namenode.http-address.mycluster.nn1</name>
- <value>{% for host in groups['jnodes'] %}{% if loop.index == 1 %}{{ host }}:50070{% endif %}{% endfor %}</value>
+ <value>{{ n1 }}:50070</value>
  </property>
  <property>
  <name>dfs.namenode.http-address.mycluster.nn2</name>
- <value>{% for host in groups['jnodes'] %}{% if loop.index == 2 %}{{ host }}:50070{% endif %}{% endfor %}</value>
+ <value>{{ n2 }}:50070</value>
  </property>
  <property>
  <name>dfs.namenode.shared.edits.dir</name>
