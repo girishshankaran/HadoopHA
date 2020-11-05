@@ -22,11 +22,11 @@
  </property>
  <property>
  <name>dfs.namenode.rpc-address.mycluster.nn1</name>
- <value>{{ n1 }}:8020</value>
+ <value>{% for host in groups['jnodes'] %}{% if loop.index == 1 %}{{ host }}:8020{% endif %}{% endfor %}</value>
  </property>
  <property>
  <name>dfs.namenode.rpc-address.mycluster.nn2</name>
- <value>{{ n2 }}:8020</value>
+ <value>{% for host in groups['jnodes'] %}{% if loop.index == 2 %}{{ host }}:8020{% endif %}{% endfor %}</value>
  </property>
  <property>
  <name>dfs.namenode.http-address.mycluster.nn1</name>
