@@ -12,15 +12,18 @@
  * [n2] indicates the node that should be used for the secondary name node.
  * [jnodes] refers to journal nodes.
  * [dnode] represents data nodes.
-
+ 
+   **Note**: More information is available in the hosts file.
+   
 ## Installing Ansible: ##
  1. curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
  2. python get-pip.py
  3. pip install ansible
 
-**Note**:
-- Ensure that all dependent packages are installed.
-- Ensure that Python package is installed and is the latest version.
+## Running the program ##
+  1. cd /root/HadoopInstall_v1.5
+  2. Run "ansible-playbook -i hosts playbook.yaml"
+
 ## Limitations ##
 - The program is tested with only 4 nodes
 - Number of data nodes should be 2
