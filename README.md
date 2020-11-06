@@ -25,9 +25,11 @@
   2. Run "ansible-playbook -i hosts playbook.yaml"
 
 ## Limitations ##
-- The program is tested with only 4 nodes
-- Number of data nodes should be 2
-- Number of namenodes should be 2
+   The program is tested with the following configurations only:
+  - Number of data nodes should be 2
+  - Number of namenodes should be 2
+  - Hadoop is tested with 2.7.7 and 3.1.1 versions
+  - Zookeeper version is 3.4.6
 
 
 
