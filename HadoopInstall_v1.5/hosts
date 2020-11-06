@@ -12,23 +12,32 @@
 
 
 [namenodes]
-
+namenode1
+namenode2
 
 [datanodes]
-
+datanode1
+datanode2
 
 [cluster01]
-
+all nodes
 
 [jnodes]
-
+journal node1
+journal node2
+journal node3
 
 [node1]
+active namenode
 
 [node2]
+secondary namenode
 
 [zknodes]
-
+zookeeper node1
+zookeeper node2
+zookepeer node3
+zookeeper node4
 
 ## green.example.com
 ## blue.example.com
