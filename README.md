@@ -15,7 +15,7 @@
  
    **Note**: More information is available in the hosts file.
    
-## Installing Ansible: ##
+## Installing Ansible ##
  1. curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
  2. python get-pip.py
  3. pip install ansible
