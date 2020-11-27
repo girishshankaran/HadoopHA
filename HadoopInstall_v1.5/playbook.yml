@@ -17,6 +17,7 @@
   - hosts: node2
     roles:
        - standbynntasks 
+       - test
 
   - hosts: zknodes
     roles:
