@@ -6,7 +6,7 @@
   - Navigate to the repo and edit the hosts file to include your namenodes and data nodes
   - Go to the **group_vars** folder and edit the *all.yml* file to change any default values such as Hadoop version, Zookeeper version, etc.
 
-## Editing the hosts file ##
+## Editing the hosts file
  * [namenode], [datanode], [jnodes], [zknodes], [n1], and [n2] are the elements in the inventory
  * [n1] indicates the node that should be used for the active name node.
  * [n2] indicates the node that should be used for the secondary name node.
@@ -15,12 +15,12 @@
  
    **Note**: More information is available in the hosts file.
    
-## Installing Ansible ##
+## Installing Ansible
  1. curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
  2. python get-pip.py
  3. pip install ansible
 
-## Running the program ##
+## Running the program
   1. cd /root/HadoopInstall_v1.5
   2. Run "ansible-playbook -i hosts playbook.yaml"
 
