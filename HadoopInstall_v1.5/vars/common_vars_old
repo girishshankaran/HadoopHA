@@ -6,6 +6,7 @@ hadoop_config_path: "/root/hadoop-{{ hadoop_version }}/etc/hadoop"
 zkversion: "3.4.6"
 zk_path: "/root/zookeeper-{{ zkversion }}"
 
+# The director paths that you can use
 # Data directory paths
 nn_data_dir: "/root/HA/data/namenode"
 dn_data_dir: "/root/HA/data/datanode"
